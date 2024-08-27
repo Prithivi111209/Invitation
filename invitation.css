@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.invitation {
+    position: relative;
+    width: 400px;
+    height: 600px;
+}
+
+.envelope {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-color: #5f5a0e; 
+    border-radius: 5px;
+    transform: perspective(600px) rotateX(0deg);
+    transition: transform 0.5s ease;
+}
+
+.flap {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 100px solid transparent;
+    background: inherit;
+}
+
+.top {
+    top: -100px;
+    left: 0;
+    border-bottom: 100px solid #F4A460;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+.bottom {
+    bottom: -100px;
+    left: 0;
+    border-top: 100px solid #F4A460;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+.left {
+    top: 0;
+    left: -100px;
+    border-right: 100px solid #F4A460;
+    border-left: 0;
+    border-top: 0;
+    border-bottom: 0;
+}
+
+.right {
+    top: 0;
+    right: -100px;
+    border-left: 100px solid #F4A460;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 0;
+}
+
+.heart-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 24px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.full-invitation {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.content {
+    position: relative;
+    color: #006400;
+    text-align: center;
+    padding: 10px;
+}
+
+.date-time{
+    position: relative;
+    color: #006400;
+    text-align: center;
+}
+
+.closing-note{
+    position: relative;
+    color: #1b0d0d;
+    text-align: center;
+}
+a {
+    color: #006400;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
